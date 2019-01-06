@@ -28,6 +28,7 @@ def index(request):
     webpage_lists = AccessRecord.objects.order_by('date')
     date_dict = {'access_records':webpage_lists}
 
+    #return render(request, 'index.html', context=date_dict)
     return render(request, 'first_app/index.html', context=date_dict)
 
     
