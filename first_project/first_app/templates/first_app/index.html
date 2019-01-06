@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Byos Securites</title>
+    <link rel="stylesheet" href="{% static "css/mystyle.css"%}" />
+</head>
+<body>
+    <div class="container">    
+        <h1> Welcome to access records test</h1>
+        <h3> Here is your access records</h3> 
+        
+        <div class="accessTable">
+            {% if access_records %}
+            <table>
+                <thead>
+                    <th>Site Name</th>
+                    <th>Access Records</th>
+                </thead>
+                {% for acc in access_records%}
+                    <tr>
+                        <td>{{ acc.name}}</td>
+                        <td>{{acc.date}}</td>
+                    </tr>
+                {% endfor%}
+                {%else%}
+                <div> No access records to show !</div>
+
+                {% endif %}
+            </table>
+        </div>
+
+    </div>
+</body>
+</html>

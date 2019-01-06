@@ -18,6 +18,10 @@ from django.urls import path
 from  django.urls.conf import include
 from first_app import views
 
+# added for administration title
+from django.conf import settings
+admin.site.site_header = settings.ADMIN_SITE_HEADER
+
 urlpatterns = [
     path('', views.index, name='index'),
     path('admin/', admin.site.urls),

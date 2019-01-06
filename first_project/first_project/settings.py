@@ -121,3 +121,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
+# added for administration title
+ADMIN_SITE_HEADER = "Byos Securites Administration"
