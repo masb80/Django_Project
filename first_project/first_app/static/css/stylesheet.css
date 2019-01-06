@@ -1,0 +1,15 @@
+
+.accessTable th, tr, table, td {
+    border: 2px solid black;   
+}
+
+h1{
+    margin: 10px auto;
+    color: blue    
+}
+.table{
+    border-radius: 5px;
+    width: 50%;
+    margin: 80px auto;
+    float: none;
+}

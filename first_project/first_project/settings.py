@@ -122,4 +122,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 # added for administration title
-ADMIN_SITE_HEADER = "Byos Securites Administration"
+ADMIN_SITE_HEADER = "Byos Cybersecurity"
