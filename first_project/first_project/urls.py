@@ -24,6 +24,7 @@ admin.site.site_header = settings.ADMIN_SITE_HEADER
 
 urlpatterns = [
     path('', views.index, name='index'),
+    path('formPage/', views.form_name_view, name='form_name'),
     path('admin/', admin.site.urls),
     path('extension/', include('first_app.urls')),
 ]
